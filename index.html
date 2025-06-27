@@ -3,20 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
     <title>Pagination</title>
   </head>
-  <body>
-    <header>
+  <body class="bg-indigo-100">
+    <header class="text-indigo-900 text-9xl">
       <h1>Pagination</h1>
     </header>
 
-    <section id="post-container"></section>
+    <main class="w-90vw mx-auto">
 
-    <section id="pagination-container">
-      <button>Previous</button>
-      <button>Next</button>
-    </section>
-    
-    <script src="pagination.js"></script>
+      <div>
+        <button id="display-posts" class="border-2 p-2 hover:curser-pointer hover:bg-indigo-800 bg-indigo-200 text-indigo-800 hover:text-indigo-200">Display Posts</button>
+      </div>
+
+      <section id="pagination-container">
+      </section>
+
+      <section id="post-container"></section>
+
+      <script src="pagination.js"></script>
+    </main>
   </body>
 </html>
