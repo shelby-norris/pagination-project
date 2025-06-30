@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Pagination</title>
+  </head>
+  <body class="bg-indigo-100">
+    <header class="text-indigo-900 text-7xl sm:text-9xl">
+      <h1 class="flex flex-col m-auto p-4 text-center">Pagination</h1>
+    </header>
+
+    <section class="flex flex-col min-h-screen">
+    <main class="flex-grow w-[90vw] mx-auto">
+      <div class="flex flex-col text-md sm:text-xl justify-center items-center *:rounded p-4">
+        <button
+          id="display-posts"
+          class="border-2 p-2 hover:curser-pointer w-30 sm:w-40 hover:bg-indigo-800 bg-indigo-200 text-indigo-800 hover:text-indigo-200"
+        >
+          Display Posts
+        </button>
+      </div>
+
+      <section
+        id="pagination-container"
+        class="flex justify-between my-2 w-full items-center"
+      ></section>
+
+      <section id="post-container"></section>
+
+      <div class="flex flex-col justify-center items-center">
+        <footer class="mt-auto text-indigo-800">
+          &copy Shelby Norris 2025
+        </footer>
+      </div>
+    </section>
+
+      <script src="pagination.js"></script>
+    </main>
+  </body>
+</html>
